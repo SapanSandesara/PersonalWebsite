@@ -1,0 +1,135 @@
+body {
+	background: rgb(248, 249, 249);
+	color: hsl(87, 73%, 3%);
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar content"   
+
+}
+main{
+    grid-area:content;
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+    
+}
+div#sidebar{
+    grid-area:sidebar;
+    background-color: rgb(2, 9, 2) !important;
+    color:white;
+    margin-bottom: 0;
+    height: 100vh;
+    
+
+}
+div#aboutme{
+    align-items: center;
+    grid-area:content;
+    color:hsl(87, 73%, 3%);
+    height: 100vh;
+    width: 60vw;
+    margin-left: 2%;
+
+}
+
+#title{
+   
+    text-align: justify;
+    font-weight: bold;
+    
+    font-size: 4vw;
+}
+#content{
+  
+       font-style: normal;
+        text-align: justify;
+        width: auto;
+        font-size: 2vw;
+    
+}
+#links{
+    display: inline-block;
+}
+#linkedinpic{
+
+    height: 10vh;
+    width: 10vw;
+    margin-top: 0;
+}
+#githubpic{
+
+    height: 10vh;
+    width: 10vw;
+    margin-top: 0;
+}
+#mypicture{
+
+    height: 40vh;
+    width: 25vw;
+    margin-top: 0;
+}
+#namesidebar{
+    
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    text-align: justify;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 2vw;
+   
+}
+#resume{
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    text-align: justify;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 2vw;
+    border: 1px solid rgb(27, 98, 46);
+    border-radius: 5px;
+    border-style: double;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#portfolio{
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    text-align: justify;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 2vw;
+    border: 1px solid rgb(7, 98, 46);
+    border-radius: 5px;
+    border-style: double;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#sidebar>p:hover{
+    /* background-color: rgb(122, 121, 121) !important; */
+    cursor: pointer;
+    animation: bounce 1 0.5s linear;
+    animation-fill-mode: forwards;
+    
+ }
+ #sidebar>a>p:hover{
+    /* background-color: rgb(122, 121, 121) !important; */
+    cursor: pointer;
+    animation: bounce 1 0.5s linear;
+    animation-fill-mode: forwards;
+    
+ }
+ #sidebar>a{
+    text-decoration: none;
+    color: white;
+ }
+
+ @keyframes bounce {
+    100%{
+       transform: translateY(-5px);
+    }
+  }
